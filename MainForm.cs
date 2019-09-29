@@ -16,5 +16,33 @@ namespace EmbeddedBrowser
         {
             InitializeComponent();
         }
+
+        private void ButtonGoogle_Click(object sender, EventArgs e)
+        {
+            GotoUrl("https://Google.com");
+        }
+
+     
+        private void ButtonFacebook_Click(object sender, EventArgs e)
+        {
+            GotoUrl("https://Facebook.com");
+        }
+
+        private void ButtonLinkedIn_Click(object sender, EventArgs e)
+        {
+            GotoUrl("https://LinkedIn.com");
+
+        }
+
+        private void ButtonGithub_Click(object sender, EventArgs e)
+        {
+            GotoUrl("https://Github.com");
+        }
+
+        private void GotoUrl(string url)
+        {
+
+        }
+
     }
 }
