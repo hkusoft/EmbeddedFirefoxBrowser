@@ -48,7 +48,7 @@
             this.ButtonGithub});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(662, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(845, 39);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -60,6 +60,7 @@
             this.ButtonGithub.Name = "ButtonGithub";
             this.ButtonGithub.Size = new System.Drawing.Size(36, 36);
             this.ButtonGithub.Text = "toolStripButton1";
+            this.ButtonGithub.ToolTipText = "Github";
             this.ButtonGithub.Click += new System.EventHandler(this.ButtonGithub_Click);
             // 
             // ButtonGoogle
@@ -70,6 +71,7 @@
             this.ButtonGoogle.Name = "ButtonGoogle";
             this.ButtonGoogle.Size = new System.Drawing.Size(36, 36);
             this.ButtonGoogle.Text = "toolStripButton2";
+            this.ButtonGoogle.ToolTipText = "Google";
             this.ButtonGoogle.Click += new System.EventHandler(this.ButtonGoogle_Click);
             // 
             // ButtonLinkedIn
@@ -80,6 +82,7 @@
             this.ButtonLinkedIn.Name = "ButtonLinkedIn";
             this.ButtonLinkedIn.Size = new System.Drawing.Size(36, 36);
             this.ButtonLinkedIn.Text = "toolStripButton3";
+            this.ButtonLinkedIn.ToolTipText = "LinkedIn";
             this.ButtonLinkedIn.Click += new System.EventHandler(this.ButtonLinkedIn_Click);
             // 
             // ButtonFacebook
@@ -90,6 +93,7 @@
             this.ButtonFacebook.Name = "ButtonFacebook";
             this.ButtonFacebook.Size = new System.Drawing.Size(36, 36);
             this.ButtonFacebook.Text = "toolStripButton4";
+            this.ButtonFacebook.ToolTipText = "Facebook";
             this.ButtonFacebook.Click += new System.EventHandler(this.ButtonFacebook_Click);
             // 
             // geckoWebBrowser
@@ -99,7 +103,7 @@
             this.geckoWebBrowser.FrameEventsPropagateToMainWindow = false;
             this.geckoWebBrowser.Location = new System.Drawing.Point(0, 39);
             this.geckoWebBrowser.Name = "geckoWebBrowser";
-            this.geckoWebBrowser.Size = new System.Drawing.Size(662, 414);
+            this.geckoWebBrowser.Size = new System.Drawing.Size(845, 538);
             this.geckoWebBrowser.TabIndex = 1;
             this.geckoWebBrowser.UseHttpActivityObserver = false;
             // 
@@ -107,10 +111,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 453);
+            this.ClientSize = new System.Drawing.Size(845, 577);
             this.Controls.Add(this.geckoWebBrowser);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "Embedded Firefox Browser";
