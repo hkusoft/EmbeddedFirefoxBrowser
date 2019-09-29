@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gecko;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace EmbeddedBrowser
         [STAThread]
         static void Main()
         {
+            Xpcom.Initialize("Firefox64");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

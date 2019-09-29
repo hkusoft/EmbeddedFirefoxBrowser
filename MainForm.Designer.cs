@@ -34,6 +34,7 @@
             this.ButtonGoogle = new System.Windows.Forms.ToolStripButton();
             this.ButtonLinkedIn = new System.Windows.Forms.ToolStripButton();
             this.ButtonFacebook = new System.Windows.Forms.ToolStripButton();
+            this.geckoWebBrowser = new Gecko.GeckoWebBrowser();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,11 +92,23 @@
             this.ButtonFacebook.Text = "toolStripButton4";
             this.ButtonFacebook.Click += new System.EventHandler(this.ButtonFacebook_Click);
             // 
+            // geckoWebBrowser
+            // 
+            this.geckoWebBrowser.ConsoleMessageEventReceivesConsoleLogCalls = true;
+            this.geckoWebBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.geckoWebBrowser.FrameEventsPropagateToMainWindow = false;
+            this.geckoWebBrowser.Location = new System.Drawing.Point(0, 39);
+            this.geckoWebBrowser.Name = "geckoWebBrowser";
+            this.geckoWebBrowser.Size = new System.Drawing.Size(662, 414);
+            this.geckoWebBrowser.TabIndex = 1;
+            this.geckoWebBrowser.UseHttpActivityObserver = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 453);
+            this.Controls.Add(this.geckoWebBrowser);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -115,6 +128,7 @@
         private System.Windows.Forms.ToolStripButton ButtonFacebook;
         private System.Windows.Forms.ToolStripButton ButtonLinkedIn;
         private System.Windows.Forms.ToolStripButton ButtonGithub;
+        private Gecko.GeckoWebBrowser geckoWebBrowser;
     }
 }
 

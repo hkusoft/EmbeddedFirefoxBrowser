@@ -41,7 +41,7 @@ namespace EmbeddedBrowser
 
         private void GotoUrl(string url)
         {
-
+            geckoWebBrowser.Navigate(url);
         }
 
     }
